@@ -5,7 +5,7 @@ import useFetch from "../../hooks/useFetch";
 
 const TrendingProducts = ({ type }) => {
   const { data, loading, error } = useFetch(
-    `https://strapi-shoplify.up.railway.app/api/products?populate=*&[filters][type][$eq]=${type}`
+    `https://strapi-production-a8c7.up.railway.app/api/products?populate=*&[filters][type][$eq]=${type}`
   );
 
   function reveal() {
@@ -41,7 +41,7 @@ const TrendingProducts = ({ type }) => {
       </div>
       <div className="bottom">
         {error ? (
-          <span className="errMessage">Something went wrong!</span>
+          <span className="errMessage">Uh oh, shit went wrong.</span>
         ) : loading ? (
           <div className="lds-ring">
             <div></div>
