@@ -19,7 +19,7 @@ module.exports = [
     config: {
       origin: [
         "http://localhost:3000",
-        "https://strapi1000-production.up.railway.app",
+        "https://strapi-shoplify.up.railway.app/",
         "https://strapi-production-a8c7.up.railway.app",
       ],
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
