@@ -53,7 +53,7 @@ const Cart = () => {
 
           {products?.map((item) => (
             <div className="item" key={item.id}>
-              <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
+              <img src={item.img} alt="" />
 
               <div className="details">
                 <h1>{item.title}</h1>
