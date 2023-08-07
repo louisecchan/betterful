@@ -18,6 +18,7 @@ module.exports = [
     name: "strapi::cors",
     config: {
       origin: [
+        "http://localhost:1337",
         "http://localhost:3000",
         "https://strapi-shoplify.up.railway.app",
         "https://strapi1000-production.up.railway.app",
